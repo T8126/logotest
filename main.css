@@ -1,0 +1,34 @@
+#text1 {
+    stroke-dasharray: 3186;
+    animation: fillD;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+#text2 {
+    stroke-dasharray: 3186;
+    stroke-dashoffset: 3186;
+    animation: fillRest;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-delay: 0.8s;
+}
+
+@keyframes fillD {
+    0% {
+        stroke-dashoffset: 3186;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillRest {
+    0% {
+        stroke-dashoffset: 3186;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
